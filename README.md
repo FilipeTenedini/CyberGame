@@ -31,5 +31,5 @@ A página em desenvolvimento pode ser acessada em:
 
 ## Autores
 
-|  [<img src="https://avatars.githubusercontent.com/u/105571583?v=4" width=115><br><sub>Filipe Tenedini</sub>](https://github.com/FilipeTenedini) | [<img src="https://avatars.githubusercontent.com/u/104042556?v=4" width=115><br><sub>Hariel Mendonça</sub>](https://github.com/Hariel007) | [<img src="https://avatars.githubusercontent.com/u/95362445?v=4" width=115><br><sub>Leonardo Duarte</sub>](https://github.com/leo-md) |
-| :---: | :---: | :---: |
+|  [<img src="https://avatars.githubusercontent.com/u/105571583?v=4" width=115><br><sub>Filipe Tenedini</sub>](https://github.com/FilipeTenedini) | [<img src="https://avatars.githubusercontent.com/u/104042556?v=4" width=115><br><sub>Hariel Mendonça</sub>](https://github.com/Hariel007) | [<img src="https://avatars.githubusercontent.com/u/95362445?v=4" width=115><br><sub>Leonardo Duarte</sub>](https://github.com/leo-md) | [<img src="https://avatars.githubusercontent.com/u/106328258?v=4" width=115><br><sub>Pietro Del Corona</sub>](https://github.com/PietroDelCorona) |
+| :---: | :---: | :---: | :---: |

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c971d825c.js" crossorigin="anonymous"></script>
+    <title>Menu Lateral</title>
+    <style>
+        * {
+            margin: 0;
+            border: none;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            background-image: linear-gradient(to right, darkblue, grey);
+        }
+        #mestre {
+            width: 50px;
+            height: 50px;
+            background-color: azure;
+            color: #222;
+            border-radius: 25px;
+            margin: 20px;
+            box-shadow:10px 10px 10px 0 rgba(0,0,0,0.3);
+            transition: all 1s;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+            
+            
+        }
+
+        #mestre:hover {
+            animation-name: chamaMenu;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        #mestre:hover #menu{
+            transform: rotate(90deg);
+        }
+
+        #menu {
+            /*transform: rotate(90deg);*/
+            margin-bottom: 1px;
+            transition: 1s;
+        }
+
+        #check:checked ~ #menu {
+            transform: rotate(90deg);
+        }
+
+        i {
+            float: top;
+            font-size: 30px;
+            margin: 10px;
+        }
+
+        @keyframes chamaMenu{
+            from {
+                height: 50px;
+            }
+
+            to {
+                height: 450px;
+            }
+        }
+
+        select {
+            width: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+
+        input[type=button] {
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <select id="option" name="option">
+            <option value="padrao">Padrão</option>
+            <option value="black">Black</option>
+            <option value="natal">Natal</option>
+        </select>
+        <input type="button" value="Aplicar" onclick="mudaCor()">
+    </form>
+    <div id="mestre" >
+            <i id='menu' class="fa-solid fa-ellipsis"></i>
+            <i class="fa-solid fa-mobile-screen"></i>
+            <i id=''class="fa-brands fa-playstation"></i>
+            <i id=''class="fa-brands fa-xbox"></i>
+            <i id=''class="fa-solid fa-vr-cardboard"></i>
+            <i id=''class="fa-solid fa-trophy"></i>
+            <i id=''class="fa-solid fa-headset"></i>
+            <i id=''class="fa-solid fa-gauge-high"></i>
+            <i id=''class="fa-solid fa-chess-king"></i>
+    </div>
+
+    <script>
+        function mudaCor() {
+            target = document.querySelector('#mestre');
+            backG = document.querySelector('body');
+            if (document.querySelector('#option').value == 'padrao') {
+                target.style.backgroundColor = 'azure';
+                target.style.color = '#222'; 
+                backG.style.backgroundImage = 'linear-gradient(to right, darkblue, grey)'               
+            }
+            
+            if (document.querySelector('#option').value == 'black') {
+                target.style.backgroundColor = 'yellow';
+                target.style.color = 'black';
+                backG.style.backgroundImage = 'linear-gradient(to right, black, grey)'                
+            }
+            
+            if (document.querySelector('#option').value == 'natal') {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'red'; 
+                backG.style.backgroundImage = 'linear-gradient(to right, red, grey)'               
+            }
+
+        }
+
+    </script>
+
+    
+</body>
+</html>

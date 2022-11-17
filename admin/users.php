@@ -7,7 +7,7 @@ require_once 'functions.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuários</title>
+    <title>Painel Admin - Usuários</title>
 </head>
 <body>
 <?php if($seguranca) { ?>
@@ -16,14 +16,7 @@ require_once 'functions.php';
     <h3>Bem vindo, <?php echo $_SESSION['nome']; ?></h3>
     <h2>Gerenciador de usuários</h2>
     
-    <nav>
-        <div>
-            <a href='index.php'>Painel</a>
-            <a href='users.php'>Gerenciar Usuários</a>
-            <a href='logout.php'>Sair</a>
-            <a href='#'>--</a>
-        </div>
-    </nav>
+    <?php include "layout/menu.php" ?>
 <?php 
     $tabela = 'usuarios';  
     $order = 'nome';  
@@ -83,6 +76,8 @@ require_once 'functions.php';
                         <td><?php echo $usuario['papelAdmin'];?></td>
                         <td>
                             <a href="users.php?id=<?php echo $usuario['id'];?>&nome=<?php echo $usuario['nome']?>">Excluir</a>
+                            | 
+                            <a href="editUser.php?id=<?php echo $usuario['id'];?>&nome=<?php echo $usuario['nome']?>">Atualizar</a>
                         </td>
                     </tr>
 

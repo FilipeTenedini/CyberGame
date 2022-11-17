@@ -1,6 +1,6 @@
 <?php session_start(); 
 $seguranca = isset($_SESSION['ativa']) ? TRUE : header('location: login.php');
-$Admin = isset($_SESSION['papelAdmin']) ? 1 : header('location: login.php');
+$admin = isset($_SESSION['papelAdmin']) ? 1 : header('location: login.php');
 require_once 'functions.php';
 ?>
 <!DOCTYPE html>
@@ -18,14 +18,7 @@ require_once 'functions.php';
     
     
 
-    <nav>
-        <div>
-            <a href='index.php'>Painel</a>
-            <a href='users.php'>Gerenciar Usuários</a>
-            <a href='logout.php'>Sair</a>
-            <a href='#'>--</a>
-        </div>
-    </nav>
+    <?php include "layout/menu.php" ?>
 
 <?php }?>
     

@@ -1,6 +1,9 @@
 .cabecalho {
-
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;  
 }
 
 .cabecalho-imagem {
@@ -18,12 +21,21 @@
 }
 
 .cabelhaco-menu-item {
-
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
 
 }
 
 .conteudo-principal {
-
+    display:flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-around;
+    margin: 25px 50px 75px;
+    border-style: solid;
+    border-radius: 10px;
 
 }
 
@@ -34,5 +46,5 @@
 
 .rodape {
 
-    
+
 }

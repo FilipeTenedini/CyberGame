@@ -1,9 +1,5 @@
-<?php require "functions.php"
+<?php "functions.php"
 
-$dbHost = "localhost";
-$dbUser = "root";
-$dbPass= "";
-$dbName = "contatos_cyber_games"
 
 ?>
 <!DOCTYPE html>

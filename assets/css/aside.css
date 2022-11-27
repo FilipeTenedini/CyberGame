@@ -1,0 +1,117 @@
+aside{
+    position: fixed;
+    /* background-color: rgb(205, 226, 255); */
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #FFF;
+    right: -3000px;
+    top: 0;
+    width: auto;
+    height: 100%;
+    transition: all ease-in 0.3s;
+}
+aside .cart{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cart .cart-title{
+    width: 120px;
+    font-size: 20px;
+    margin: 20px;
+    border-bottom: 1px solid #FFF;
+    font-weight: bold;
+}
+aside .cart-item--area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right:20px ;
+    margin-left: 20px;
+    border-bottom: 1px solid #FFF;
+}
+.cart--reserve-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.cart-item--area img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.cart-item--nome{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: evert;
+    margin-left: 20px;
+    width: 80px;
+}
+.cart-item--preco{
+    margin-left: 20px;
+    width: 90px;
+}
+.cart-qtd{
+    display: flex;
+    margin-left: 20px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+}
+.cart-qtmenos,
+.cart-qtmais{
+    background-color: #FFF;
+    width: 20px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.cart-qtmenos{
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    color:#022336;
+}
+.cart-qtmais{
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    color:#022336;
+}
+.cart-qt{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.cart .subtotal,
+.cart .desc,
+.cart .total{
+    margin: 20px;
+    border-bottom: 1px solid #FFF;
+    display: flex;
+    justify-content: space-between
+    ;
+}
+.cart .subtotal-txt,
+.cart .desc-txt,
+.cart .total-txt{    
+    font-size: 20px;
+    font-weight: bold;  
+}
+.cart .desc-txt span{
+    font-size: 12px;
+    font-weight: 200;
+}
+.cart .subtotal-price,
+.cart .desc-price,
+.cart .total-price{
+    margin-right: 5px;
+}
+.cart .total{
+    margin-bottom: 40px;
+}
+ .cart .button{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+}

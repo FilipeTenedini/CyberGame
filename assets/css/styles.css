@@ -1,0 +1,344 @@
+@import url('modal.css');
+@import url('aside.css');
+:root{
+    --bg-color: rgb(5,38,58);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'evert';
+    src: url('../fonts/ABSTER.otf') format('truetype');
+}
+
+.models{
+    display: none;
+}
+
+
+
+
+header{
+    position:absolute;
+    width: 100%;
+    color: #FFF;
+}
+header .header-symbol{
+    font-family: evert;
+    font-size: 25px;
+    letter-spacing: 5px;
+    padding: 40px;
+    margin-left: 50px;
+}
+
+
+
+
+
+.button{        
+    width: 200px;
+    height: 50px;
+    display: flex;
+    text-decoration: none;
+}
+button{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: transparent;
+    font-family: evert;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 5px;
+    color: #FFF;
+
+}
+.button:hover{
+    -webkit-box-shadow: 0px 0px 50px -15px #F0F8FF; 
+    box-shadow: 0px 0px 50px -15px #F0F8FF;
+    display: inline;
+    transition: 0.2s ease-in;
+    display: inline-flex;
+}
+button:hover{
+    -webkit-box-shadow: inset 0px 0px 50px 2px rgba(240,248,255,0.66); 
+    box-shadow: inset 0px 0px 50px 2px rgba(240,248,255,0.66);
+    transition: 0.2s ease-in;
+}
+
+
+
+
+
+.banner{
+    height: 100vh;
+    width: calc(100vw-10px);
+    background-image: url('../img/bg2.jpg');
+    background-position: center ;
+    background-size: cover;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    
+    color: #FFF;
+}
+.banner .banner-content{
+    opacity: 1; /*0*/
+    display: flex;
+    flex-direction: column;
+    transition: ease-in 2s;
+    overflow: hidden;
+}
+.banner .banner-content h1,
+.banner .banner-content span{
+    position: sticky;
+    opacity: 0;
+    font-family: evert;
+    text-transform: uppercase;
+    padding-right: 100px;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+    transition: ease-in 1s;
+}
+.banner .banner-content h1{
+    font-size: 42px;
+}
+.banner .banner-content span{
+    font-size: 28px;
+}
+.banner .button{
+    margin-top: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.expeditions{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #FFF;
+} 
+.expeditions .exp-title{
+    opacity: 0; /*0*/
+    font-family: evert;
+    text-transform: uppercase;
+    font-size: 42px;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+    transition: ease-in 1.5s;
+
+}
+.expeditions .games{
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 105px);
+    align-items: center;
+}
+.games-exps{
+    flex:1;
+    display:grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 30px;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: 2px solid #089fc9;
+    border-bottom: 2px solid #089fc9;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    transition: ease-in 0.2s;
+}
+.game:hover{
+    transform: scale(1.05);    
+    border-right: 3px solid #FFF;
+    border-bottom: 3px solid #FFF;
+}
+.game .game-card{
+    padding: 10px;
+}
+.game-title{
+    text-transform: uppercase;
+    font-family: evert;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+.game--img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    margin-top: 10px;
+    box-shadow: 3px 3px 13px #000;
+}
+.game-desc{
+    height: 80px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.game-price{
+    margin-bottom: 15px;
+}
+.game button{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 2px solid #089fc9;
+    border-bottom: 2px solid #089fc9;
+    border-radius: 5px;
+    margin: auto;
+}
+.game .button{
+    margin: auto;
+}
+.game button:hover{
+    transform: scale(1.05);    
+    border-right: 3px solid #FFF;
+    border-bottom: 3px solid #FFF;
+}
+.expeditions .exp-img{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.degrade1{
+    width: 100vw;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, transparent 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.degrade2{
+    width: 100vw;
+    height: 200px;
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+@media (max-width: 1029px){
+    .expeditions .exp-img{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+    .games-exps{
+        grid-template-columns: repeat(2, 2fr)
+    }
+    .games-exps .button{
+        margin: auto;
+    }
+}
+@media (max-width: 945px){
+    .header-symbol{
+        text-align: center;
+    }
+    .banner{
+        align-items: center;
+    }
+    .banner-content{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .banner .banner-content h1,
+    .banner .banner-content span{
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 900px){
+    .modal{
+        height: 100vh;
+    }
+    .modal .modal-cart{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .modal-desc{
+        flex: 1;
+    }
+    .modal-img img{
+        height: 300px;
+        width: 100vw;
+        margin-bottom: 30px;
+        border-radius: 0px;
+    }
+    .modal-reserve{
+        flex: 1;
+    }
+    .modal-reserve--title, 
+    .modal-reserve .description,
+    .modal-reserve .reserve{
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 720px){
+    .exp-title{
+        text-align: center;
+        line-height: 70px;
+    }
+    aside{
+        width: 100vw;
+    }
+    aside .cart-item--area{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 505px){
+    .games-exps{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .banner .banner-content h1,
+    .banner .banner-content span{
+        text-align: center;
+    }
+}
+@media (max-width: 325px){
+    header .header-symbol{
+        padding:0px;
+        margin-top: 15px;
+    }
+
+}

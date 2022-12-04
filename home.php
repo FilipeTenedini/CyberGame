@@ -110,6 +110,6 @@
     <?php require "./footer.php" ?>
 
     <script src="./assets/js/games.js"></script>
-    <script async src="./assets/js/homeScript.js"></script>
+    <script src="./assets/js/homeScript.js"></script>
 </body>
 </html>

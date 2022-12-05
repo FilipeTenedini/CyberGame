@@ -24,7 +24,7 @@ require_once 'functions.php';
     inserirUsuarios($connect);
 
     if (isset($_GET['id'])) { ?>
-        <h2>Tem certeza que deseja deletar o usuário <?php echo $_GET['nome']; ?></h2>
+        <h2>Tem certeza que deseja deletar o usuário? <?php echo $_GET['nome']; ?></h2>
         <form action='' method='post'>
             <input type='hidden' name='id' value='<?php echo $_GET['id'] ?>'>
             <input type='submit' name='deletar' value='Deletar'>

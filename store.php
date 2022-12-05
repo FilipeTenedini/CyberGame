@@ -41,7 +41,7 @@
                     <div class="description">
                         <span>--</span>
                     </div>
-                    <div class="reserve">How many reserves??</div>
+                    <div class="reserve">Quantas reservas?</div>
 
                     <div class="info-price">
                         <div class="info-quantity">
@@ -51,8 +51,8 @@
                         </div>
                     </div>
                     <div class="modal-buttons">
-                        <a class="button"><button>cancel</button></a>
-                        <a class="button"><button>reserve</button></a>
+                        <a class="button"><button>Cancelar</button></a>
+                        <a class="button"><button>Reservar</button></a>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@
     </header>
 
     <main class="store">3        
-        <h1>your store</h1>
+        <h1>Sua loja</h1>
         <section class="store-games">
             <div class="games-show"> </div>
         </section>
@@ -93,7 +93,7 @@
                     <div class="total-txt">Total: </div>
                     <div class="total-price">--</div>
                 </div>
-                <a href="#k" class="button"><button>reserve</button></a>
+                <a href="#k" class="button"><button>Reservar</button></a>
             </div>
         </div>
     </aside>

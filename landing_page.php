@@ -25,10 +25,13 @@
     <main class="conteudo"></main>
         <img src="assets/img/1.jpg" alt="Imagem do Pac-man">
         <section class="conteudo-principal">
-            <label>Nome completo:</label>
-            <input type="text" name= "nome" placeholder="Digite aqui o seu nome">
-            <label>Seu melhor e-mail:</label>
-            <input type="text" name="email" placeholder="Digite aqui o seu e-mail">
+            <form action="function.php" method="post"> 
+                <label>Nome completo:</label>
+                <input type="text" name= "nome_contato" placeholder="Digite aqui o seu nome">
+                <label>Seu melhor e-mail:</label>
+                <input type="email" name="email_contato" placeholder="Digite aqui o seu e-mail">
+                <input type="submit" value="Confirmar">
+            </form>
 
         </section>
         <section class="conteudo-secundario">

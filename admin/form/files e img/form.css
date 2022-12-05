@@ -1,0 +1,148 @@
+body{ 
+   background: #062745;
+   background: -webkit-linear-gradient(0deg, #062745 0%, #062745 100%);
+   background: linear-gradient(0deg, #062745 0%,  #062745 0%);
+   text-align: justify;
+    
+}
+
+img{
+    transition: all 1s;
+    cursor: pointer;
+    
+    
+}
+img:hover{
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+
+
+
+div{width: auto;height: auto;}
+
+h1{
+  color: aliceblue;
+  text-align: center;
+  font-family: 'Zen Dots', cursive;
+
+}
+
+
+input{
+    text-align: justify;
+    margin: 6px 6px;
+    padding: 5px;
+    size: 15px;
+    border-radius: 5px;
+    border: none;
+    color: aliceblue;
+    background-color: rgb(31, 28, 28);
+}
+
+
+
+input:hover{border: none;}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+form{
+    
+    border-style: groove;
+    padding: 10px;
+    background: rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    width: 500px;
+    height: auto;
+    margin-top: 10px;
+    border-width: auto;
+}
+
+.file{
+    background: none;
+    transition: all .5s;
+    border: 10px solid transparent;
+}
+
+.file:hover{
+    border: 5px solid #136497;
+    border-radius: 10px;
+}
+
+
+.text{
+     color: aliceblue;
+     background-color: rgb(31, 28, 28);
+     text-align: center;
+     
+}
+
+
+.submit{
+    width: 100%;
+    background-color: rgb(85, 235, 85);
+    color: rgb(15, 15, 15);
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 15px 32px;
+    border-radius: 10px;
+    transition: 0.4s;
+    margin: 4px 2px;
+    box-shadow: 0 9px rgb(216, 216, 216);
+    text-transform: uppercase;
+    font-family: 'Zen Dots', cursive;
+}
+.submit:hover{
+    background-color:rgb(59, 252, 0);
+    width: 100%;
+    font-family: 'Zen Dots', cursive;
+    font-size: 20px ;
+    text-transform: uppercase;
+    border: none;
+    padding: 15px 32px;
+    color: rgb(0, 0, 0);
+    font-style: initial;
+      
+    
+}
+.clean{
+    width: 100%;
+    background-color: rgb(230, 46, 46);
+    color: rgb(15, 15, 15);
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 15px 32px;
+    border-radius: 10px;
+    transition: 0.4s;
+    margin: 4px 2px;
+    text-transform: uppercase;
+    box-shadow: 0 9px rgb(216, 216, 216);
+    font-family: 'Zen Dots', cursive;
+
+}
+
+.clean:hover{
+    background-color: rgb(252, 0, 0);
+    font-size: 20px;
+    border: none;
+    font-family: 'Zen Dots', cursive;
+    text-transform: uppercase;
+    width: 100%; 
+    color: rgb(0, 0, 0);
+}
+button:active{
+    box-shadow: 0,5px #666;
+    transform: translateY(4px); 
+    
+}
+

@@ -15,7 +15,7 @@
                 <div class="game--img"><img src="" alt=""></div>
                 <div class="game-desc">--</div>
                 <div class="game-price">--</div>
-                <a href="#" class="button"><button>comprar</button></a>
+                <a href="#" class="button"><button>Comprar</button></a>
             </div>            
         </div>
         <div class="cart-item--area">
@@ -41,7 +41,7 @@
                     <div class="description">
                         <span>--</span>
                     </div>
-                    <div class="reserve">How many reserves??</div>
+                    <div class="reserve">Quantas reservas?</div>
 
                     <div class="info-price">
                         <div class="info-quantity">
@@ -51,8 +51,8 @@
                         </div>
                     </div>
                     <div class="modal-buttons">
-                        <a class="button"><button>cancel</button></a>
-                        <a class="button"><button>reserve</button></a>
+                        <a class="button"><button>Cancelar</button></a>
+                        <a class="button"><button>Reservar</button></a>
                     </div>
                 </div>
             </div>
@@ -66,19 +66,19 @@
         <?php require "./menuLateral.php" ?>
         <div class="banner">             
             <div class="banner-content">   
-                <h1>the best game store</h1>
-                <span>here and now</span>
-                <a href="#kk" class="button"><button>learn more</button></a>
+                <h1>A melhor loja de jogos</h1>
+                <span>Aqui e agora</span>
+                <a href="#kk" class="button"><button>Saiba mais</button></a>
             </div>
         </div>
         <section class="expeditions">
             
             <div class="degrade1"></div>
-            <div class="exp-title" id="kk">the biggest games</div>
+            <div class="exp-title" id="kk">Os maiores jogos</div>
             <div class="games">
                 <div class="games-exps"> </div>
             </div>
-            <a href="store.php" class="button"><button>more</button></a>
+            <a href="store.php" class="button"><button>mais</button></a>
             <div class="degrade2"></div>
         </section>
     </main>        
@@ -102,7 +102,7 @@
                     <div class="total-txt">Total: </div>
                     <div class="total-price">--</div>
                 </div>
-                <a href="#" class="button"><button>reserve</button></a>
+                <a href="#" class="button"><button>Reservar</button></a>
             </div>
         </div>
     </aside>

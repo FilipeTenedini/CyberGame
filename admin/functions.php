@@ -292,3 +292,13 @@ function buscaEstilo($connect){
     $estilo = buscaUnica($connect, 'skins', 1);
     return $estilo['nome'];   
 }
+
+// Usando a Landing Page
+function inserirContato ($connect) {
+    if (!empty($_POST['nome_contato']) AND !empty($_POST['email_contato'])) {
+        $emailContato = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+        $query = "INSERT * FROM contatos WHERE nome = 'nome_contato' email = '$emailContato' ";
+        $executar = mysqli_query($connect, $query);
+        $return = mysqli_fetch_assoc($executar);
+    }
+}

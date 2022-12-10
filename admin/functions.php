@@ -297,7 +297,7 @@ function buscaEstilo($connect){
 function inserirContato ($connect) {
     if (!empty($_POST['nome_contato']) AND !empty($_POST['email_contato'])) {
         $emailContato = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-        $query = "INSERT * FROM contatos WHERE nome = 'nome_contato' email = '$emailContato' ";
+        $query = "INSERT INTO FROM contatos WHERE (nome,email) VALUES ('nome_contato', 'email_contato')";
         $executar = mysqli_query($connect, $query);
         $return = mysqli_fetch_assoc($executar);
     }

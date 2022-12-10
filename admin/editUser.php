@@ -7,14 +7,14 @@ require_once 'functions.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_admin.css">
     <title>Usuários</title>
 </head>
 <body>
 <?php if($seguranca) { ?>
         
     <h1>Painel administrativo do site</h1>
-    <h3>Bem vindo, <?php echo $_SESSION['nome']; ?></h3>
-    <h2>Gerenciador de usuários</h2>
+    <h3>Olá <?php echo $_SESSION['nome']; ?>, seja bem vindo!</h3>
     
     <?php include "layout/menu.php" ?>
 <?php 

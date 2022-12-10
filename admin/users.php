@@ -7,16 +7,18 @@ require_once 'functions.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_admin.css">
     <title>Painel Admin - Usuários</title>
 </head>
 <body>
 <?php if($seguranca) { ?>
         
     <h1>Painel administrativo do site</h1>
-    <h3>Bem vindo, <?php echo $_SESSION['nome']; ?></h3>
-    <h2>Gerenciador de usuários</h2>
+    <h3>Olá <?php echo $_SESSION['nome']; ?>, seja bem vindo!</h3>
     
     <?php include "layout/menu.php" ?>
+
+    <h3>Gerencia de usuários</h3>
 <?php 
     $tabela = 'usuarios';  
     $order = 'nome';  
@@ -54,7 +56,7 @@ require_once 'functions.php';
     </form>
 
     <div class='container'>
-        <table border='1'>
+        <table class="tabela">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -92,6 +94,8 @@ require_once 'functions.php';
         </table>
 
     </div>
+
+    <?php include "layout/footer.php" ?>
 
 <?php }?>
     

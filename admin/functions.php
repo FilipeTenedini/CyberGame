@@ -243,6 +243,21 @@ function updateCardapio($connect){
     }
 }
 
+function updateSkin($connect, $skin){
+    if (isset($_POST['aplicar'])) {
+        //UPDATE usuario
+        $query = "UPDATE skins SET nome = '$skin' WHERE id = 1";
+        $executar = mysqli_query($connect, $query);
+        if ($executar) {
+            echo "Usuario atualizado com sucesso!";
+        } else {
+            echo "Erro ao atualizar o usuário.";
+        }
+         
+        
+    }    
+}
+
 
 function uploadImage($caminho){
     if (!empty($_FILES['imagem']['name'])) {
@@ -293,11 +308,13 @@ function buscaEstilo($connect){
     return $estilo['nome'];   
 }
 
+
+
 // Usando a Landing Page
 function inserirContato ($connect) {
     if (!empty($_POST['nome_contato']) AND !empty($_POST['email_contato'])) {
         $emailContato = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-        $query = "INSERT INTO FROM contatos WHERE (nome,email) VALUES ('nome_contato', 'email_contato')";
+        $query = "INSERT * FROM contatos WHERE nome = 'nome_contato' email = '$emailContato' ";
         $executar = mysqli_query($connect, $query);
         $return = mysqli_fetch_assoc($executar);
     }

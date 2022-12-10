@@ -19,24 +19,9 @@ require_once 'functions.php';
     <?php include "layout/menu.php" ?>
 
     <h3>Gerencia de Layout</h3>
-<?php 
-    $tabela = 'cardapio';  
-    $order = 'titulo';  
-    $cardapios = buscar($connect, $tabela, 1, $order);
+       
     
-    
-    if (isset($_GET['id'])) { ?>
-        <h2>Tem certeza que deseja deletar do cardápio o item: <?php echo $_GET['titulo']; ?></h2>
-        <form action='cardapio.php' method='post'>
-            <input type='hidden' name='id' value='<?php echo $_GET['id'] ?>'>
-            <input type='submit' name='deletar' value='Deletar'>
-        </form>    
-    <?php }   
-        if (isset($_POST['deletar']) AND !empty($_POST['id'])) {
-            deletar($connect, "cardapio", $_POST['id']);
-            }     
-            
-    ?>
+
     <div class='container'>
                 
         

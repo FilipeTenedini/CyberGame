@@ -77,7 +77,7 @@ function inserirUsuarios($connect){
         }
         if (empty($erros)) {
             //inserir o usuário no BD
-            $query = "INSERT INTO usuarios (nome, email, senha, dataCadastro) VALUES ('$nome' , '$email' , '$senha' , NOW())";
+            $query = "INSERT INTO usuarios (nome, email, senha, dataCadastro, papelAdmin) VALUES ('$nome' , '$email' , '$senha' , NOW() , 1)";
             $executar = mysqli_query($connect, $query);
             if ($executar) {
                 echo "Usuario inserido com sucesso!";
@@ -163,86 +163,6 @@ function updateUser($connect){
     }    
 }
 
-function insertCardapio($connect){
-    if ((isset($_POST['insert']) AND !empty($_POST['titulo']) AND !empty($_POST['descricao'])) ) {
-
-        $titulo = mysqli_real_escape_string($connect, $_POST['titulo']);
-        $descricao = mysqli_real_escape_string($connect, $_POST['descricao']);
-        $data = mysqli_real_escape_string($connect, $_POST['dataRegistro']);
-        
-        $imagem = !empty($_FILES['imagem']['name']) ?  $_FILES['imagem']['name'] : "";
-        $retornoUpload = "";
-        if (!empty($imagem)) {
-            $caminho = "imagens/uploads/";
-            $retornoUpload = uploadImage($caminho);
-            if (is_array($retornoUpload)) {
-                foreach ($retornoUpload as $erro) {
-                    echo $erro;
-                }
-                $imagem = "";
-            }else{
-                $imagem = $retornoUpload;
-            }
-        }       
-        
-        $query = "INSERT INTO cardapio (titulo, descricao, imagem, dataRegistro) VALUES ('$titulo' , '$descricao' , '$imagem' , '$data')";
-        $executar = mysqli_query($connect, $query);
-        if ($executar) {
-            if (is_array($retornoUpload)){
-                echo "Item inserido com sucesso! Porém a imagem não pode ser inserida.";
-            }else{
-                header("location: cardapio.php");
-            }            
-        } else {
-            echo "Erro ao inserir o usuário.";
-        }       
-    }
-}
-
-function updateCardapio($connect){
-    if ((isset($_POST['update']) AND !empty($_POST['titulo']) AND !empty($_POST['descricao'])) ) {
-        $id = (int) $_POST['id'];
-        $titulo = mysqli_real_escape_string($connect, $_POST['titulo']);
-        $descricao = mysqli_real_escape_string($connect, $_POST['descricao']);
-        $data = mysqli_real_escape_string($connect, $_POST['dataRegistro']);
-        
-        $imagem = !empty($_FILES['imagem']['name']) ?  $_FILES['imagem']['name'] : "";
-        $retornoUpload = "";
-        if (!empty($imagem)) {
-            $caminho = "imagens/uploads/";
-            $retornoUpload = uploadImage($caminho);
-            if (is_array($retornoUpload)) {
-                foreach ($retornoUpload as $erro) {
-                    echo $erro;
-                }
-                $imagem = "";
-            }else{
-                $imagem = $retornoUpload;
-            }
-        } 
-
-        if (!empty($id)) {
-            if (!empty($imagem)) {
-                $query = "UPDATE cardapio SET imagem = '$imagem', titulo = '$titulo', descricao = '$descricao', dataRegistro = '$data' WHERE id = '$id'";
-
-            }else{
-                $query = "UPDATE cardapio SET titulo = '$titulo', descricao = '$descricao', dataRegistro = '$data' WHERE id = '$id'";
-            }
-            $executar = mysqli_query($connect, $query);
-            if ($executar) {
-                if (is_array($retornoUpload)){
-                    echo "Item atualizado com sucesso! Porém a imagem não pode ser inserida.";
-                }else{
-                    header("location: cardapio.php");
-                }
-            } else {
-                echo "Erro ao atualizar o cardapio.";
-            }
-        }
-
-    }
-}
-
 function updateSkin($connect, $skin){
     if (isset($_POST['aplicar'])) {
         //UPDATE usuario
@@ -258,50 +178,6 @@ function updateSkin($connect, $skin){
     }    
 }
 
-
-function uploadImage($caminho){
-    if (!empty($_FILES['imagem']['name'])) {
-        $nomeImagem = $_FILES['imagem']['name'];
-        $tipo = $_FILES['imagem']['type'];
-        $nomeTemporario = $_FILES['imagem']['tmp_name'];
-        $tamanho = $_FILES['imagem']['size'];
-        $erros = array();
-
-        $tamanhoMaximo = 1024 * 1024 * 5; //+/- 5 mb
-        if ($tamanho > $tamanhoMaximo) {
-            $erros[] = 'Seu arquivo excede o tamanho máximo (5mb).<br>';
-        }
-        
-        $arquivosPermitidos = ["png", "jpg", "jpeg"];
-        $extensao = pathinfo($nomeImagem, PATHINFO_EXTENSION);
-        if (!in_array($extensao, $arquivosPermitidos)) {
-            $erros[] = 'Seu arquivo não possui uma extensão permitida (png, jpg, jpeg).<br>';
-        }
-
-        $typesPermitidos = ["image/png","image/jpg","image/jpeg"];
-        if (!in_array($tipo, $typesPermitidos)) {
-            $erros[] = 'Seu arquivo não possui um tipo permitido (png, jpg, jpeg).<br>';
-
-        }
-
-        if (!empty($erros)) {
-            /*foreach ($erros as $erro) {
-                echo $erro;
-            }*/
-            return $erros;
-        }else{
-            
-            $hoje = date("d-m-Y_h-i-s");
-            $novoNome = $hoje."-".$nomeImagem;
-            if(move_uploaded_file($nomeTemporario, $caminho.$novoNome)){
-                return $novoNome;
-            }else{
-                return FALSE;
-            }
-            
-        }
-    }
-}
 
 function buscaEstilo($connect){
     $estilo = buscaUnica($connect, 'skins', 1);

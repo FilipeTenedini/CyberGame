@@ -13,13 +13,13 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img class="cabecalho-imagem" src="assets/img/logo.jpg" style="width:5%" alt="Logo CyberGames">
+        <img class="cabecalho-imagem" src="assets/img/logo2.png"  alt="Logo CyberGames">
         <nav class="cabecalho-nav">
-            <a class="cabelhaco-menu-item" href="admin/home.php">Home</a>
-            <a class="cabelhaco-menu-item" href="admin/cardapio.php">Cardápio</a> 
-            <a class="cabelhaco-menu-item" href="admin/login.php">Fazer Login</a>
-            <a class="cabelhaco-menu-item" href="#">Contato</a>
-            <a class="cabelhaco-menu-item" href="#">Trabalhe Conosco</a>
+            <a class="cabelhaco-menu-item" href="home.php">Home</a>
+            <a class="cabelhaco-menu-item" href="store.php">Loja</a> 
+            <a class="cabelhaco-menu-item" href="login.php">Fazer Login</a>
+            <a class="cabelhaco-menu-item" href="campeonato.html">Campeonato</a>
+            <a class="cabelhaco-menu-item" href="promocao.html">Promoções</a>
         </nav>
     </header>
     <main class="conteudo"></main>
@@ -33,67 +33,67 @@
 
                 <div class="mySlides">
                 <div class="numbertext">1 / 11</div>
-                <img src="assets/img/basecamp.jpg" style="width:30%" alt="Capa do jogo GTA V">
+                <img src="assets/img/basecamp.jpg" style="width:45%" alt="Capa do jogo GTA V">
                 <div class="text">GTA V</div>
                 </div>
 
                 <div class="mySlides">
                 <div class="numbertext">2 / 11</div>
-                <img src="assets/img/camp2.jpg" style="width:30%" alt="Capa do jogo Red Dead Redemption">
+                <img src="assets/img/camp2.jpg" style="width:45%" alt="Capa do jogo Red Dead Redemption">
                 <div class="text">RED DEAD REDEMPTION</div>
                 </div>
 
                 <div class="mySlides">
                 <div class="numbertext">3 / 11</div>
-                <img src="assets/img/gt7.jpg" style="width:30%" alt="Capa do jogo Gran Turismo 7">
+                <img src="assets/img/gt7.jpg" style="width:45%" alt="Capa do jogo Gran Turismo 7">
                 <div class="text">GRAN TURISMO 7</div>
                 </div>
 
                 <div class="mySlides">
                 <div class="numbertext">4 / 11</div>
-                <img src="assets/img/returnal.jpg" style="width:30%" alt="Capa do jogo Returnal">
+                <img src="assets/img/returnal.jpg" style="width:45%" alt="Capa do jogo Returnal">
                 <div class="text">RETURNAL</div>
                 </div>
 
                 <div class="mySlides">
                 <div class="numbertext">5 / 11</div>
-                <img src="assets/img/genshin.jpg" style="width:30%" alt="Capa do jogo Genshin Impact">
+                <img src="assets/img/genshin.jpg" style="width:45%" alt="Capa do jogo Genshin Impact">
                 <div class="text">GENSHIN IMPACT</div>
                 </div>
 
                 <div class="mySlides">
                 <div class="numbertext">6 / 11</div>
-                <img src="assets/img/fortnite.jfif" style="width:30%" alt="Capa do jogo Fortnite">
+                <img src="assets/img/fortnite.jfif" style="width:45%" alt="Capa do jogo Fortnite">
                 <div class="text">FORTNITE</div>
                 </div>
 
                 <div class="mySlides">
                 <div class="numbertext">7 / 11</div>
-                <img src="assets/img/rocket.jfif" style="width:30%" alt="Capa do jogo Rocket League">
+                <img src="assets/img/rocket.jfif" style="width:45%" alt="Capa do jogo Rocket League">
                 <div class="text">ROCKET LEAGUE</div>
                 </div>
 
                 <div class="mySlides">
                 <div class="numbertext">8 / 11</div>
-                <img src="assets/img/farcry.jpg" style="width:30%" alt="Capa do jogo Far Cry">
+                <img src="assets/img/farcry.jpg" style="width:45%" alt="Capa do jogo Far Cry">
                 <div class="text">FAR CRY</div>
                 </div>
 
                 <div class="mySlides">
                 <div class="numbertext">9 / 11</div>
-                <img src="assets/img/amongus.jpg" style="width:30%" alt="Capa do jogo Among Us">
+                <img src="assets/img/amongus.jpg" style="width:45%" alt="Capa do jogo Among Us">
                 <div class="text">AMONG US</div>
                 </div>
 
                 <div class="mySlides">
                 <div class="numbertext">10 / 11</div>
-                <img src="assets/img/fallg.jpg" style="width:30%" alt="Capa do jogo Fall Guys">
+                <img src="assets/img/fallg.jpg" style="width:45%" alt="Capa do jogo Fall Guys">
                 <div class="text">FALL GUYS</div>
                 </div>
 
                 <div class="mySlides">
                 <div class="numbertext">11 / 11</div>
-                <img src="assets/img/grounded.jpg" style="width:30%" alt="Capa do jogo Grounded">
+                <img src="assets/img/grounded.jpg" style="width:45%" alt="Capa do jogo Grounded">
                 <div class="text">GROUNDED</div>
             
 
@@ -111,42 +111,21 @@
             
             </div>
             
+        </section>
+
+        <section>    
             <form action="" method="post" class="formulario"> 
                 <label>Nome completo:</label>
                 <input type="text" name= "nome_contato" placeholder="Digite aqui o seu nome">
                 <label>Seu melhor e-mail:</label>
                 <input type="email" name="email_contato" placeholder="Digite aqui o seu e-mail">
-                <input type="submit" value="Confirmar">
+                <button type="submit" value="Confirmar">Confirmar</button>
             </form>
 
         </section>
 
                 
-    <footer class="rodape">
-        <div class="footer-persons">
-            <div class="person 1">
-                <div class="person-name">Filipe Tenedini</div>
-                <div class="person-picture"><img src="./assets/img/fotoFilipe.jfif" style = "width:30%" alt=""></div>
-                <div class="person-git"><a href="https://github.com/FilipeTenedini">Github</a></div>
-            </div>
-            <div class="person 2">
-                <div class="person-name">Hariel Mendonça</div>
-                <div class="person-picture"><img src="./assets/img/fotoHariel.jfif" style = "width:30%" alt=""></div>
-                <div class="person-git"><a href="https://github.com/Hariel007">Github</a></div>
-            </div>
-            <div class="person 3">
-                <div class="person-name">Leonardo Machado</div>
-                <div class="person-picture"><img src="./assets/img/fotoLeonardo.jfif" style = "width:30%" alt=""></div>
-                <div class="person-git"><a href="https://github.com/leo-md">Github</a></div>
-            </div>
-            <div class="person 4">
-                <div class="person-name">Pietro Del Corona</div>
-                <div class="person-picture"><img src="./assets/img/pietroFoto.jpg" style = "width:30%" alt=""></div>
-                <div class="person-git"><a href="https://github.com/PietroDelCorona">Github</a></div>
-            </div>
-        </div>
-
-    </footer>
+    <footer class="rodape"></footer>
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);

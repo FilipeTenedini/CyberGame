@@ -310,18 +310,12 @@ function buscaEstilo($connect){
 
 // Usando a Landing Page
 function inserirContato($connect) {
-    echo $_POST['nome_contato'];
-    echo $_POST['email_contato'];
     if (!empty($_POST['nome_contato']) and !empty($_POST['email_contato'])) {
         //$emailContato = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
         $emailContato = $_POST['email_contato'];
         $nome = $_POST['nome_contato'];
-        echo $nome;
-        echo $emailContato;
-        $queryContato = "INSERT INTO contatos (nome_usuario,email) VALUES('$nome' , '$emailContato')";
+        $queryContato = "INSERT INTO contatos (nome , email) VALUES('$nome' , '$emailContato')";
         $executar = mysqli_query($connect, $queryContato);
-        echo $nome;
-        echo $emailContato;
         if ($executar) {
             echo "Usuario inserido com sucesso!";
         } else {

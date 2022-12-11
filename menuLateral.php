@@ -27,17 +27,18 @@ $estilo = buscaEstilo($connect);
     <abbr title="Promoções">
         <a href="promocao.html" id=''class="fa-solid fa-dumpster-fire"></a>
     </abbr>        
-    <abbr title="???????">
-        <a href="" id=''class="fa-solid fa-vr-cardboard"></a>
+    <abbr title="Museu dos Games">
+        <a href="home.php" id=''class="fa-solid fa-vr-cardboard"></a>
     </abbr>        
     <abbr title="Campeonato">
-        <a href="campeonato.html" id=''class="fa-solid fa-trophy"></a>
+        <a href="home.php" id=''class="fa-solid fa-trophy"></a>
     </abbr>        
     <abbr title="Contato">
-    <a href="" id=''class="fa-solid fa-headset"></a>
+    <a href="landing_page.php" id=''class="fa-solid fa-headset"></a>
     </abbr>        
-    <abbr title="Loja">
-        <a href="" id=''class="fa-solid fa-gauge-high"></a>
+    <abbr title="Enquete">
+        <a href="home.php" id=''class="fa-solid fa-gauge-high"></a>
+    </abbr>
     <abbr title="Painel do Administrador">    
         <a href="admin/login.php" id=''class="fa-solid fa-chess-king"></a>
     </abbr>

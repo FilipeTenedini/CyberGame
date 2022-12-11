@@ -8,7 +8,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="admin/css/style_landing_page.css">
+    <link rel="stylesheet" type="text/css" href="admin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="admin/css/style_landing_page.css">
     <title>Cybergame - Página Promocional</title>
 </head>
 <body>
@@ -27,92 +28,57 @@
         <section class="conteudo-principal">
             <h1><?php inserirContato($connect) ?></h1>
         
-        
-            <div class="slideshow-container">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    
+                    <div id="carousel1" class="carousel-item active">
+                        <img id="imgCarossel" class="d-block w-100" src="assets/img/basecamp.jpg" alt="Primeiro Slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img id="imgCarossel" class="d-block w-100" src="assets/img/camp2.jpg" alt="Segundo Slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img id="imgCarossel" class="d-block w-100" src="assets/img/gt7.jpg" alt="Terceiro Slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img id="imgCarossel" class="d-block w-100" src="assets/img/amongus.jpg" alt="Quarto Slide">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img id="imgCarossel" class="d-block w-100" src="assets/img/fallg.jpg" alt="Quinto Slide">
+                    </div>
 
+                    <div class="carousel-item">
+                        <img id="imgCarossel" class="d-block w-100" src="assets/img/genshin.jpg" alt="Sexto Slide">
+                    </div>
 
-                <div class="mySlides">
-                <div class="numbertext">1 / 11</div>
-                <img src="assets/img/basecamp.jpg" style="width:45%" alt="Capa do jogo GTA V">
-                <div class="text">GTA V</div>
+                    <div class="carousel-item">
+                        <img id="imgCarossel" class="d-block w-100" src="assets/img/grounded.jpg" alt="Sétimo Slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img id="imgCarossel" class="d-block w-100" src="assets/img/returnal.jpg" alt="Oitavo Slide">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img id="imgCarossel" class="d-block w-100" src="assets/img/rocket.jfif" alt="Nono Slide">
+                    </div>
+
                 </div>
-
-                <div class="mySlides">
-                <div class="numbertext">2 / 11</div>
-                <img src="assets/img/camp2.jpg" style="width:45%" alt="Capa do jogo Red Dead Redemption">
-                <div class="text">RED DEAD REDEMPTION</div>
-                </div>
-
-                <div class="mySlides">
-                <div class="numbertext">3 / 11</div>
-                <img src="assets/img/gt7.jpg" style="width:45%" alt="Capa do jogo Gran Turismo 7">
-                <div class="text">GRAN TURISMO 7</div>
-                </div>
-
-                <div class="mySlides">
-                <div class="numbertext">4 / 11</div>
-                <img src="assets/img/returnal.jpg" style="width:45%" alt="Capa do jogo Returnal">
-                <div class="text">RETURNAL</div>
-                </div>
-
-                <div class="mySlides">
-                <div class="numbertext">5 / 11</div>
-                <img src="assets/img/genshin.jpg" style="width:45%" alt="Capa do jogo Genshin Impact">
-                <div class="text">GENSHIN IMPACT</div>
-                </div>
-
-                <div class="mySlides">
-                <div class="numbertext">6 / 11</div>
-                <img src="assets/img/fortnite.jfif" style="width:45%" alt="Capa do jogo Fortnite">
-                <div class="text">FORTNITE</div>
-                </div>
-
-                <div class="mySlides">
-                <div class="numbertext">7 / 11</div>
-                <img src="assets/img/rocket.jfif" style="width:45%" alt="Capa do jogo Rocket League">
-                <div class="text">ROCKET LEAGUE</div>
-                </div>
-
-                <div class="mySlides">
-                <div class="numbertext">8 / 11</div>
-                <img src="assets/img/farcry.jpg" style="width:45%" alt="Capa do jogo Far Cry">
-                <div class="text">FAR CRY</div>
-                </div>
-
-                <div class="mySlides">
-                <div class="numbertext">9 / 11</div>
-                <img src="assets/img/amongus.jpg" style="width:45%" alt="Capa do jogo Among Us">
-                <div class="text">AMONG US</div>
-                </div>
-
-                <div class="mySlides">
-                <div class="numbertext">10 / 11</div>
-                <img src="assets/img/fallg.jpg" style="width:45%" alt="Capa do jogo Fall Guys">
-                <div class="text">FALL GUYS</div>
-                </div>
-
-                <div class="mySlides">
-                <div class="numbertext">11 / 11</div>
-                <img src="assets/img/grounded.jpg" style="width:45%" alt="Capa do jogo Grounded">
-                <div class="text">GROUNDED</div>
-            
-
-                <div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-            
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
             </div>
-            
         </section>
-
+            
         <section>    
             <form action="" method="post" class="formulario"> 
                 <label>Nome completo:</label>
@@ -126,34 +92,6 @@
 
                 
     <footer class="rodape"></footer>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        }
-    </script>
-
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>

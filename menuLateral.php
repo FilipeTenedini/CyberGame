@@ -31,7 +31,7 @@ $estilo = buscaEstilo($connect);
         <a href="home.php" id=''class="fa-solid fa-vr-cardboard"></a>
     </abbr>        
     <abbr title="Campeonato">
-        <a href="home.php" id=''class="fa-solid fa-trophy"></a>
+        <a href="campeonato.html" id=''class="fa-solid fa-trophy"></a>
     </abbr>        
     <abbr title="Contato">
     <a href="landing_page.php" id=''class="fa-solid fa-headset"></a>

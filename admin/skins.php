@@ -6,6 +6,9 @@
                 <h5 class="card-title">Skin Default do site</h5>
                 <p class="card-text">Skin definida pela equipe de Desing conforme estudos e estratégias de identidade visual.</p>
                 <input class="botaoPadrao" type='radio' name='skin' id='skin1' value='default' checked></input>
+                <label class="form-check-label" for="skin2">
+                    Skin Padrão
+                </label>
             </div>
         </div>
         <div class="cardSkin" style="width: 18rem;">
@@ -25,6 +28,9 @@
                 <h5 class="card-title">Skin Merry Christmas</h5>
                 <p class="card-text">Skin adotada para o péríodo de festas de fim de ano, que ocorrerá no mês de Dezembro.</p>
                 <input class="botaoPadrao" type='radio' name='skin' id='skin3' value='natal'></input>
+                <label class="form-check-label" for="skin2">
+                    Skin Merry Christmas
+                </label>
             </div>
         </div>
     </div>

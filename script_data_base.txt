@@ -1,0 +1,38 @@
+CREATE DATABASE projetocybergames;
+USE projetocybergames;
+
+CREATE TABLE usuarios (
+	id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(140),
+    senha VARCHAR(140),
+    email VARCHAR(140),
+    imagem VARCHAR(240),
+    dataCadastro DATE,
+    papelAdmin TINYINT(1),
+    PRIMARY KEY(id)
+);
+
+INSERT INTO usuarios (nome , senha , email , dataCadastro, papelAdmin) 
+VALUES ('Mestre', SHA1('teste'), 'mestre@email.com', NOW(), 1);
+
+CREATE TABLE skins (
+	id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(140),
+    email VARCHAR(140),
+    PRIMARY KEY(id)
+);
+
+INSERT INTO skins (nome) 
+VALUES ('default');
+
+CREATE TABLE contatos (
+	id INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(140),
+    email VARCHAR(140),
+    mensagem TEXT,
+    dataCadastro DATE DEFAULT NOW(),
+    PRIMARY KEY(id)
+);
+
+INSERT INTO contatos (nome , email, mensagem, dataCadastro) 
+VALUES ('Suporte' , 'suporte@mail.com' , 'Atendimento amplo nos dias úteis, entre 08:00 ~ 18:00 e plantão 24Hs para emergências.' , NOW());

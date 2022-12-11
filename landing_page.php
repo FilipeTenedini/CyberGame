@@ -26,56 +26,38 @@
     <main class="conteudo"></main>
         
         <section class="conteudo-principal">
-            <h1><?php inserirContato($connect) ?></h1>
-        
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    
-                    <div id="carousel1" class="carousel-item active">
-                        <img id="imgCarossel" class="d-block w-100" src="assets/img/basecamp.jpg" alt="Primeiro Slide">
+                    <div class="carousel-item active">
+                    <img id='imgCarousel' src="assets/img/basecamp.jpg" class="d-block w-100" alt="...">
                     </div>
-                    
                     <div class="carousel-item">
-                        <img id="imgCarossel" class="d-block w-100" src="assets/img/camp2.jpg" alt="Segundo Slide">
+                    <img id='imgCarousel' src="assets/img/camp2.jpg" class="d-block w-100" alt="...">
                     </div>
-                    
                     <div class="carousel-item">
-                        <img id="imgCarossel" class="d-block w-100" src="assets/img/gt7.jpg" alt="Terceiro Slide">
+                    <img id='imgCarousel' src="assets/img/amongus.jpg" class="d-block w-100" alt="...">
                     </div>
-                    
                     <div class="carousel-item">
-                        <img id="imgCarossel" class="d-block w-100" src="assets/img/amongus.jpg" alt="Quarto Slide">
+                    <img id='imgCarousel' src="assets/img/fallg.jpg" class="d-block w-100" alt="...">
                     </div>
-                    
                     <div class="carousel-item">
-                        <img id="imgCarossel" class="d-block w-100" src="assets/img/fallg.jpg" alt="Quinto Slide">
+                    <img id='imgCarousel' src="assets/img/genshin.jpg" class="d-block w-100" alt="...">
                     </div>
-
                     <div class="carousel-item">
-                        <img id="imgCarossel" class="d-block w-100" src="assets/img/genshin.jpg" alt="Sexto Slide">
+                    <img id='imgCarousel' src="assets/img/grounded.jpg" class="d-block w-100" alt="...">
                     </div>
-
                     <div class="carousel-item">
-                        <img id="imgCarossel" class="d-block w-100" src="assets/img/grounded.jpg" alt="Sétimo Slide">
+                    <img id='imgCarousel' src="assets/img/rocket.jfif" class="d-block w-100" alt="...">
                     </div>
-
-                    <div class="carousel-item">
-                        <img id="imgCarossel" class="d-block w-100" src="assets/img/returnal.jpg" alt="Oitavo Slide">
-                    </div>
-
-                    <div class="carousel-item">
-                        <img id="imgCarossel" class="d-block w-100" src="assets/img/rocket.jfif" alt="Nono Slide">
-                    </div>
-
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
             
@@ -87,7 +69,7 @@
                 <input type="email" name="email_contato" placeholder="Digite aqui o seu e-mail">
                 <button type="submit" value="Confirmar">Confirmar</button>
             </form>
-
+            <h1><?php inserirContato($connect) ?></h1>
         </section>
 
                 

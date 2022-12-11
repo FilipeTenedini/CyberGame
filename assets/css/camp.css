@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'evert';
+    src: url('/assets/fonts/ABSTER.otf') format('truetype');
+}
+header{
+    position:absolute;
+    width: 100%;
+    color: #FFF;
+    display: block;
+}
+header .header-symbol{
+    font-family: evert;
+    font-size: 25px;
+    letter-spacing: 5px;
+    padding: 40px;
+}
+body{
+    background-color: rgb(5,38,58);
+}
+.button{        
+    width: 200px;
+    height: 50px;
+    display: flex;
+    text-decoration: none;
+}
+button{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: transparent;
+    font-family: evert;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 5px;
+    color: #FFF;
+
+}
+.button:hover{
+    -webkit-box-shadow: 0px 0px 50px -15px #F0F8FF; 
+    box-shadow: 0px 0px 50px -15px #F0F8FF;
+    display: inline;
+    transition: 0.2s ease-in;
+    display: inline-flex;
+}
+button:hover{
+    -webkit-box-shadow: inset 0px 0px 50px 2px rgba(240,248,255,0.66); 
+    box-shadow: inset 0px 0px 50px 2px rgba(240,248,255,0.66);
+    transition: 0.2s ease-in;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-image: url('../img/camp.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.main-banner{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.campeonato{
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.campeonato img{
+    width: 1200px;
+}
+.campeonato .camp-title,
+.campeonato .camp-day{
+    font-size: 62px;
+}
+aside{
+    position: fixed;
+    width: 400px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    right: 0;
+    top: 0;
+}
+aside .premios{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.premios img{
+    width: 200px;
+    height: 200px;
+}
+.premios .first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
